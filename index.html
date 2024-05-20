@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="mode-selector">
+            <label for="mode">Game Mode:</label>
+            <select id="mode">
+                <option value="pva">AI vs Player</option>
+            </select>
+        </div>
+        <div id="board" class="board">
+            <div id="1" class="cell"></div>
+            <div id="2" class="cell"></div>
+            <div id="3" class="cell"></div>
+            <div id="4" class="cell"></div>
+            <div id="5" class="cell"></div>
+            <div id="6" class="cell"></div>
+            <div id="7" class="cell"></div>
+            <div id="8" class="cell"></div>
+            <div id="9" class="cell"></div>
+        </div>
+        <div id="info">
+            <div id="turn">Turn: Player X</div>
+            <div id="status">Game in progress...</div>
+            <div id="score">
+                <div class="player-score" id="playerXScore">Player X: 0</div>
+                <div class="player-score" id="playerOScore">Player O: 0</div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message">Game Over!</p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
